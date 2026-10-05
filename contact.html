@@ -1,0 +1,484 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact AnimeVerse - Get in touch with our anime community.">
+
+    <title>AnimeVerse | Contact</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span>⚔️</span> AnimeVerse
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.php" class="active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Have a question, suggestion, or just want to talk about anime?
+            We would love to hear from you.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section contact-section">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-information">
+
+                <h2>Get In Touch</h2>
+
+                <p>
+                    AnimeVerse is a place for anime fans to connect,
+                    discover new shows, and share their passion for anime.
+                    Send us a message and become part of the conversation.
+                </p>
+
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <h3>Address</h3>
+                        <p>AnimeVerse Community, Vereeniging, South Africa</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+                        <h3>Phone</h3>
+                        <p>
+                            <a href="tel:+27610727113">
+                                +27 61 072 7113
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        ✉
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+                        <p>
+                            <a href="mailto:info@animeverse.com">
+                                info@animeverse.com
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        🌐
+                    </div>
+
+                    <div>
+                        <h3>Website</h3>
+                        <p>
+                            <a href="index.html">
+                                www.animeverse.com
+                            </a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-form-container">
+
+                <h2>Send Us A Message</h2>
+
+
+                <?php if ($success !== ""): ?>
+
+                    <div class="form-message success">
+                        <?php echo $success; ?>
+                    </div>
+
+                <?php endif; ?>
+
+
+                <?php if ($error !== ""): ?>
+
+                    <div class="form-message error">
+                        <?php echo htmlspecialchars($error); ?>
+                    </div>
+
+                <?php endif; ?>
+
+
+                <form action="contact.php" method="POST">
+
+                    <div class="form-group">
+
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            value=""
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            value=""
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="What is your message about?"
+                            value=""
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message here..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section resources-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span class="section-label">Explore</span>
+
+            <h2>Anime Resources</h2>
+
+            <div class="heading-line"></div>
+
+            <p class="section-description">
+                Discover more anime information and connect with other fans.
+            </p>
+
+        </div>
+
+
+        <div class="resource-links">
+
+            <div class="resource-card">
+
+                <h3>Crunchyroll</h3>
+
+                <p>
+                    Watch thousands of anime episodes and discover new series.
+                </p>
+
+                <a
+                    href="https://www.crunchyroll.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit Crunchyroll →
+                </a>
+
+            </div>
+
+
+            <div class="resource-card">
+
+                <h3>MyAnimeList</h3>
+
+                <p>
+                    Find anime information, ratings, reviews, and community discussions.
+                </p>
+
+                <a
+                    href="https://myanimelist.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit MyAnimeList →
+                </a>
+
+            </div>
+
+
+            <div class="resource-card">
+
+                <h3>IMDb</h3>
+
+                <p>
+                    Explore ratings, information, cast members, and reviews.
+                </p>
+
+                <a
+                    href="https://www.imdb.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Visit IMDb →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span>⚔️</span> AnimeVerse
+            </a>
+
+            <p>
+                Your ultimate destination for anime fans,
+                stories, recommendations, and community.
+            </p>
+
+            <div class="social-links">
+
+                <a
+                    href="https://www.facebook.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    f
+                </a>
+
+                <a
+                    href="https://www.instagram.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram"
+                >
+                    ◎
+                </a>
+
+                <a
+                    href="https://x.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X"
+                >
+                    X
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Navigation</h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:info@animeverse.com">
+                        info@animeverse.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+27610727113">
+                        +27 61 072 7113
+                    </a>
+                </li>
+
+                <li>
+                    Veeriniging, Gauteng, South Africa
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Anime</h3>
+
+            <ul>
+
+                <li>
+                    <a href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer">
+                        Crunchyroll
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://myanimelist.net/" target="_blank" rel="noopener noreferrer">
+                        MyAnimeList
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">
+                        IMDb
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 AnimeVerse. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
